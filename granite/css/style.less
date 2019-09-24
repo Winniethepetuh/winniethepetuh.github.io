@@ -1,0 +1,356 @@
+/*Fonts Settings*/
+@font-face {
+ font-family: 'GothamBla';
+ src: url('../fonts/GothamPro-Black.eot');
+ src: url('../fonts/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GothamPro-Black.woff2') format('woff2'),
+  url('../fonts/GothamPro-Black.woff') format('woff'),
+  url('../fonts/GothamPro-Black.ttf') format('truetype'),
+  url('../fonts/GothamPro-Black.svg#GothamPro-Black') format('svg');
+ font-weight: 900;
+ font-style: normal;
+}
+
+.gothamBla() {
+ font-family: GothamBla, sans-serif;
+}
+
+@font-face {
+ font-family: 'GothamLig';
+ src: url('GothamPro-Light.eot');
+ src: url('GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('GothamPro-Light.woff2') format('woff2'),
+  url('GothamPro-Light.woff') format('woff'),
+  url('GothamPro-Light.ttf') format('truetype'),
+  url('GothamPro-Light.svg#GothamPro-Light') format('svg');
+ font-weight: 300;
+ font-style: normal;
+}
+
+.gothamLig() {
+ font-family: GothamLig, sans-serif;
+}
+
+/*Main Settings*/
+
+
+
+
+/*Work*/
+.header {
+ margin-top: 25px;
+ vertical-align: center;
+
+ /*Телефон*/
+ &-number {
+  margin-top: -8px;
+
+  h4 {
+   .gothamBla();
+   font-size: 18px;
+   margin-bottom: 12.5px;
+  }
+
+  p {
+   .gothamLig();
+   font-size: 11px;
+   color: #969696;
+  }
+ }
+ button {
+ .gothamLig();
+ width: 160px;
+ height: 44px;
+ background-color: #fff;
+ border: 3px solid black;
+}
+}
+
+/*Кнопка*/
+
+
+
+/*Navbar*/
+.menu {
+
+ &-bg {
+  background-image: url(../img/bg.png);
+  height: 550px;
+  position: absolute;
+  left: 0;
+  bottom: -35px;
+  right: 0;
+  
+ }
+
+
+ &-navbar {
+  background-color: #ffcc00;
+  border-radius: 0px;
+  margin-top: 30px;
+ }
+}
+
+.slider {
+   color: #fff;
+
+ h1 {
+  .gothamBla();
+  font-size: 36px;
+  margin-top: 140px;
+ }
+ .p{
+  .gothamLig();
+  font-size: 14px;
+  margin-top: 40px;
+ } 
+ 
+}
+
+.slider2{
+ color: #fff;
+ margin-top: 65px;
+ 
+  button{
+  .gothamBla();
+  font-size: 12px;
+  color: #0d0d0d;
+  width: 200px;
+  background-color: #ffd200;
+  height: 50px;
+ }
+ p{
+  margin-top: 14px;
+  padding-left: 15px;
+ }
+}
+
+/*Main*/
+.main {
+ margin-top: 220px;
+ padding-bottom: 116px;
+
+ h1{
+  .gothamBla();
+  text-align: center;
+  margin-bottom: 60px;
+ }
+ &-form{
+  text-align: center;
+  
+  button{
+   .gothamBla();
+   font-size: 12px;
+   background-color: #ffd200;
+  }
+  h4{
+   .gothamBla();
+   font-size: 16px;
+   color: #0f0f0f;
+   margin-bottom: 30px;
+  }
+ }
+ h3{
+  .gothamBla();
+  font-size: 15px; 
+  margin-top: 30px;
+ }
+ p{
+  .gothamLig();
+  margin-top: 20px;
+  margin-bottom: 30px;
+ }
+ img{
+width: 270px;
+height: 179px;
+ }
+}
+
+
+/*Приемущества*/
+.features{
+ background-color: #f4f4f4;
+ 
+ h1{
+  .gothamBla();
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 100px;
+ }
+ &-form{
+  text-align: center;
+  h4{
+   .gothamBla();
+   margin-top: 40px;
+   font-size: 15px;
+   margin-bottom: 20px;
+  }
+  p{
+   .gothamLig();
+   font-size: 12px;
+   color: #292929;
+     margin-bottom: 120px;
+
+}
+ }
+}
+
+/*Товары*/
+.goods{
+ margin-top: 80px;
+ 
+ h1{
+  .gothamBla();
+  text-align: center;
+  margin-bottom: 80px;
+ }
+ 
+ &-icon{
+  text-align: center;
+  
+  h4{
+   .gothamBla();
+   font-weight: 400;
+   font-size: 12px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+  }
+  
+ button{
+  .gothamBla();
+  font-size: 12px;
+  color: #0d0d0d;
+  width: 200px;
+  background-color: #ffd200;
+  height: 50px;
+  margin-bottom: 115px;
+ }
+ }
+ p{
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+ }
+}
+
+
+/*Services*/
+.services{
+ background-color: #f4f4f4;
+ h1{
+  .gothamBla();
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 120px;
+ }
+ &-machine{
+  text-align: center;
+
+  img{
+   width: 230px;
+   height: 130px;
+  }
+ }
+ p{
+  font-weight: 800;
+  font-size: 15px;
+  color: #292929;
+  margin-top: 40px;
+  margin-bottom: 120px;
+ }
+}
+
+
+/*Contant*/
+.contact{
+ background-image: url(../img/bg2.png);
+ h2{
+  margin-bottom: 60px;
+ }
+ .img{
+  margin-top: 200px;
+ }
+ img{
+  display: inline-block;
+  vertical-align: top;
+ }
+ p{
+  display: inline-block;
+ }
+ &-info{
+  margin-top: 80px;
+  margin-bottom: 80px;
+  background-color: #fff;
+  text-align: left;
+  width: 380px;
+  height: 360px;
+  padding-left: 60px;
+  p{
+    margin-left: 20px;
+    color: #292929;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  &-number{
+   p{
+    font-weight: 900;
+    margin-bottom: 40px; 
+   }
+  }
+  &-location{
+   p{
+    margin-bottom: 40px;
+   }
+  }
+ }
+}
+
+
+/*Boot*/
+.boot{
+ background-color: #292929;
+ 
+ img{
+  margin-top: 50px;
+ }
+ &-info{
+  text-align: right;
+  h3{
+  .gothamBla();
+  color: #fff;
+  font-size: 18px;
+  margin-top: 50px;
+ }
+  p{
+   color: #fff;
+   font-size: 13px;
+  }
+  button {
+ .gothamLig();
+ width: 160px;
+ color: #fff;
+ height: 44px;
+ background-color: #292929;
+ border: 3px solid #fff;
+ margin-top: 30px;
+}
+ }
+ &-p{
+  margin-top: 80px;
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 12px;
+  display: inline-block;
+ }
+}
+
+/*Media*/
+@media (max-width:767px) {
+ .header {
+
+  &-img {
+   padding-top: 100px;
+  }
+ }
+}
