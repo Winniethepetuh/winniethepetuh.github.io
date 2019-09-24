@@ -43,6 +43,14 @@
 }
 /*Кнопка*/
 /*Navbar*/
+.menu li {
+  font-weight: 700;
+  color: #fff;
+  margin-left: 80px;
+}
+.menu a {
+  color: #000;
+}
 .menu-bg {
   background-image: url(../img/bg.png);
   height: 550px;
@@ -249,8 +257,8 @@
 .boot {
   background-color: #292929;
 }
-.boot img {
-  margin-top: 50px;
+.boot-img {
+  padding-top: 50px;
 }
 .boot-info {
   text-align: right;
