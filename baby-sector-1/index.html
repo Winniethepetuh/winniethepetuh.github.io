@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="icon" href="/favicon.ico">
+ <title>Baby Nest</title>
+ <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+ <link href="css/style.css" rel="stylesheet">
+ <!--Font-->
+ <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+ <!--Таймер-->
+ <link rel="stylesheet" href="./css/flipclock.css">
+ <link rel="stylesheet" href="./css/panorama-slider.min.css">
+</head>
+
+<body>
+
+ <main class="main">
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+     <div class="main-header">
+      <h1>Акция</h1>
+      <p>Только 5 дней скидка -39% <br>
+       + ортопедическая подушка в подарок
+      </p>
+     </div>
+
+     <form action="#">
+      <div class="main-form-header">
+       <h1>Кокон-позиционер<br>
+        для новорожденных Baby Nest</h1>
+       <p>Baby Nest – сверхудобное <br>приспособление для сна малыша!</p>
+      </div>
+
+      <ul>
+       <li>Безопасность</li>
+       <li>Комфорт</li>
+       <li>Качество</li>
+      </ul>
+
+      <div class="main-prices">
+       <div class="main-prices-1">
+        <img src="./img/liney.svg" alt="">
+        <p>Обычная цена</p>
+        <h4>895 грн</h4>
+       </div>
+
+       <div class="main-prices-2">
+        <p>Цена сегодня</p>
+        <h4>546 грн</h4>
+       </div>
+      </div>
+
+      <input class="input" type="text" value="Имя">
+      <input type="text" value="Телефон">
+
+      <button class="btn">КУПИТЬ СО СКИДКОЙ</button>
+     </form>
+     <div class="eTimer"></div>
+    </div>
+
+    <div class="col-md-">
+     <img class="baby" src="./img/bg_header.svg" alt="">
+    </div>
+   </div>
+  </div>
+ </main>
+ <h1 class="header-h1">Посмотрите, как красиво и удобно!</h1>
+
+ <!--Bootstrap-->
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <script src="./js/flipclock.min.js"></script>
+ <script src="./js/panorama-slider.min.js"></script>
+ <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+ <script src="https://e-timer.ru/js/etimer.js"></script>
+ <script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery(".eTimer").eTimer({
+			etType: 0, etDate: "31.10.2019.0.0", etTitleText: "До конца акции соталось:", etTitleSize: 19, etShowSign: 1, etSep: ":", etFontFamily: "Trebuchet MS", etTextColor: "black", etPaddingTB: 15, etPaddingLR: 15, etBackground: "#edf6f6", etBorderSize: 0, etBorderRadius: 2, etBorderColor: "white", etShadow: " 0px 0px 0px 0px #333333", etLastUnit: 3, etNumberFontFamily: "Impact", etNumberSize: 35, etNumberColor: "white", etNumberPaddingTB: 0, etNumberPaddingLR: 8, etNumberBackground: "#ff6f97", etNumberBorderSize: 0, etNumberBorderRadius: 5, etNumberBorderColor: "white", etNumberShadow: " 0px 0px 0px 0px rgba(0, 0, 0, 0.5)"
+		});
+	});
+</script>
+ <script>
+  $(document).ready(function() {
+     var clock;
+     clock = $('.clock').FlipClock({
+      clockFace: 'DailyCounter',
+      autostart: false,
+      callbacks: {
+       stop: function() {
+        $("message").html
+       }
+      }
+     });
+
+     clock.setTime(5000);
+     clock.setCountdown(true);
+     clock.start();
+
+ </script>
+</body>
+
+</html>
