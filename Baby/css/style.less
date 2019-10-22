@@ -499,8 +499,34 @@ font-style: normal;
   padding: 25px 0px 40px 0;
   text-align: center;
   font-weight: 700;
+  margin: 0;
+  margin-top: -8px;
  }
 }
+
+
+.word{
+  background-color: #8ecdf6;
+ h1{
+  text-align: center;
+  font-family: Lobster;
+  font-size: 36px;
+  padding: 30px 0px 10px 0;
+ }
+ &-text{
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 200px;
+  p{
+   display: inline-block;
+   margin-left: 20px;
+   padding-bottom: 30px;
+  }
+ }
+ 
+}
+
 
 /*Media*/
 @media screen and (max-width: 1200px){
@@ -519,6 +545,14 @@ font-style: normal;
  }
 }
 @media screen and (max-width:1024px){
+ .word{
+  &-text{
+   margin-left: 80px;
+   p{
+    
+   }
+  }
+ }
  .doctor{
   img{
    width: 0;
@@ -567,6 +601,16 @@ font-style: normal;
 }
 
 @media screen and (max-width: 768px){
+ .word{
+  &-text{
+   margin-left: 0px;
+   p{
+   text-align: center;
+    display: block;
+    margin: 0;
+   }
+  }
+ }
  .ser-slider{
   img{
    padding-left: 100px;
