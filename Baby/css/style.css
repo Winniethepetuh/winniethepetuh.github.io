@@ -6,6 +6,10 @@
   font-weight: normal;
   font-style: normal;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 /*Проект*/
 .main {
   position: relative;
@@ -85,7 +89,7 @@
   text-align: center;
   height: 70px;
   max-width: 300px;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 .main-prices p {
   text-align: center;
@@ -145,6 +149,7 @@
   padding: 17px 0;
 }
 .video {
+  margin: 0;
   position: relative;
   background-color: #edf6f6;
   margin-top: -10px;
@@ -214,7 +219,7 @@
   text-align: center;
   margin-left: 30px;
 }
-.tovar h3 {
+.block h3 {
   font-weight: 600;
   color: #fff;
   font-size: 16px;
@@ -222,6 +227,37 @@
   text-align: center;
   padding: 15px 0px 15px 0px;
   margin: 0;
+}
+.tovar {
+  background-color: #edf6f6;
+}
+.tovar h1 {
+  margin: 0;
+  padding-bottom: 50px;
+  padding-top: 40px;
+  color: #ff6f97;
+  font-family: Lobster;
+  font-size: 33px;
+  text-align: center;
+}
+.tovar-block {
+  display: inline-block;
+  margin-left: 50px;
+}
+.tovar-block-img {
+  display: inline-block;
+  width: 185px;
+  padding: 0;
+}
+.tovar-block-img button {
+  display: block;
+  color: #fff;
+  font-size: 13px;
+  background-color: #fcc212;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 5px 20px;
+  margin: 5px 0px 70px 16%;
 }
 .doctor {
   margin: 0;
@@ -233,6 +269,7 @@
   text-align: center;
   background-color: #ff6f97;
   color: #fff;
+  margin: 0;
 }
 .doctor-block {
   display: inline-block;
@@ -428,7 +465,7 @@
   padding-top: 30px;
 }
 .main-2 {
-  margin-left: 6%;
+  margin-left: 5%;
 }
 .main-2 h1 {
   font-family: Lobster;
@@ -472,12 +509,31 @@
   color: #fff;
   font-size: 24px;
   font-weight: 500;
-  margin-left: 200px;
+  text-align: center;
 }
 .word-text p {
   display: inline-block;
   margin-left: 20px;
   padding-bottom: 30px;
+}
+.arrow {
+  position: absolute;
+  top: 28%;
+  transform: scaleY(-28%);
+  z-index: 100;
+  border: none;
+  width: 42px;
+  height: 76px;
+  background-color: #edf6f6;
+}
+.arrow-prev {
+  left: 0%;
+  left: -50px;
+  background-image: url(../img/arrow-prev.svg);
+}
+.arrow-next {
+  right: 0;
+  background-image: url(../img/arrow-next.svg);
 }
 /*Media*/
 @media screen and (max-width: 1200px) {
@@ -534,6 +590,12 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .tovar-block {
+    margin-left: 120px;
+  }
+  .arrow-prev {
+    margin-left: -10%;
+  }
   .word-text {
     margin-left: 0px;
   }
@@ -575,13 +637,26 @@
     margin-left: 13%;
   }
   .plus-block {
-    padding-left: 30px;
+    padding-left: 80px;
   }
   .timer {
     margin-left: 13%;
   }
 }
 @media screen and (max-width: 480px) {
+  .order p {
+    margin-left: 25%;
+  }
+  .tovar-block {
+    margin-left: 150px;
+  }
+  .tovar-block button {
+    margin-left: 12%;
+  }
+  .arrow {
+    height: 0;
+    width: 0;
+  }
   .people {
     padding-left: 100px;
   }
@@ -593,10 +668,17 @@
     height: 100%;
   }
   .main {
-    margin-left: -8%;
+    margin-left: -2%;
+  }
+  .main-form-header {
+    margin-left: -5%;
   }
   eTimer {
     margin-left: -8px;
+  }
+  .video {
+    margin: 0;
+    padding: 0;
   }
   .video-block {
     width: 100%;
@@ -604,7 +686,13 @@
     top: -10%;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
+  .tovar-block {
+    margin-left: 26%;
+  }
+  .main-2 {
+    margin-left: 25%;
+  }
   .doctor-block {
     padding: 0px;
   }
@@ -616,6 +704,9 @@
   }
   .plus-block {
     padding-left: -20px;
+  }
+  .main {
+    margin-left: -3%;
   }
   .main-header h1 {
     margin-left: 12%;
@@ -635,14 +726,38 @@
     display: inline-block;
     width: 100%;
     height: 100%;
-    margin-left: 5%;
+    margin-left: 1%;
   }
 }
 @media screen and (max-width: 320px) {
+  .tovar-block {
+    margin-left: 22%;
+  }
+  .tovar-block button {
+    margin-left: 15%;
+  }
   .ser img {
     margin-left: -20px;
   }
-  form {
-    margin-left: 10%;
+  .main-header {
+    margin-left: 12%;
+  }
+  .main-form-header {
+    margin-left: -20px;
+  }
+  .main-prices {
+    margin-left: 0%;
+  }
+  .main form {
+    margin-left: 4%;
+  }
+  .main form input {
+    margin-left: 20%;
+  }
+  .main form button {
+    margin-left: 16%;
+  }
+  .timer {
+    margin-left: 0%;
   }
 }

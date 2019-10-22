@@ -14,6 +14,7 @@
  <!--Таймер-->
  <link rel="stylesheet" href="./css/flipclock.css">
  <link rel="stylesheet" href="./css/panorama-slider.min.css">
+ <link rel="stylesheet" href="./css/slick.css">
 </head>
 
 <body>
@@ -120,9 +121,65 @@
 
  </div>
 
+<div class="block"> <h3>Кокон-позиционер-гнездышко-BabyNest – великолепное изобретение человечества! <br>
+  В нем малышу так спокойно и комфортно, что можно ни о чем не переживать!</h3></div>
+
 <div class="tovar">
- <h3>Кокон-позиционер-гнездышко-BabyNest – великолепное изобретение человечества! <br>
-  В нем малышу так спокойно и комфортно, что можно ни о чем не переживать!</h3>
+   <h1>Доступные модели Baby Nest</h1>
+  
+  <div class="tovar-slider">
+   <div class="tovar-block">
+    <div class="tovar-block-img">
+     <img src="./img/tovar1.jpg" alt="">
+     <button class="btn">ЗАКАЗАТЬ</button>
+    </div>
+    
+    <div class="tovar-block-img">
+     <img src="./img/tovar2.jpg" alt="">
+     <button class="btn">ЗАКАЗАТЬ</button>
+    </div>
+    
+    <div class="tovar-block-img">
+     <img src="./img/tovar3.jpg" alt="">
+     <button class="btn">ЗАКАЗАТЬ</button>
+    </div>
+    
+    <div class="tovar-block-img">
+     <img src="./img/tovar4.jpg" alt="">
+     <button class="btn">ЗАКАЗАТЬ</button>
+    </div>
+    
+    <div class="tovar-block-img">
+     <img src="./img/tovar5.jpg" alt="">
+     <button class="btn">ЗАКАЗАТЬ</button>
+    </div>
+    
+    <div class="tovar-block-img">
+     <img src="./img/tovar1.jpg" alt="">
+     <button class="btn">ЗАКАЗАТЬ</button>
+    </div>
+    
+    <div class="tovar-block-img">
+     <img src="./img/tovar2.jpg" alt="">
+     <button class="btn">ЗАКАЗАТЬ</button>
+    </div>
+    
+    <div class="tovar-block-img">
+     <img src="./img/tovar3.jpg" alt="">
+     <button class="btn">ЗАКАЗАТЬ</button>
+    </div>
+    
+    <div class="tovar-block-img">
+     <img src="./img/tovar4.jpg" alt="">
+     <button class="btn">ЗАКАЗАТЬ</button>
+    </div>
+    
+    <div class="tovar-block-img">
+     <img src="./img/tovar5.jpg" alt="">
+     <button class="btn">ЗАКАЗАТЬ</button>
+    </div>
+   </div>
+  </div>
 </div>
  
  
@@ -388,16 +445,17 @@ Baby Nest – настоящая чудо-помощница <br>
 ЕГРПОУ 14360570, МФО 305299<br>
 р\р №26006050343576<br>
 Политика конфиденциальности<br>
-Пользовательское соглашение
   </p>
  </div>
  
  <!--Bootstrap-->
+ <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
- <script src="./js/flipclock.min.js"></script>
  <script src="./js/panorama-slider.min.js"></script>
- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
  <script src="https://e-timer.ru/js/etimer.js"></script>
+ <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+ </script>
+ <script src="./js/slick.min.js"></script>
  <script type="text/javascript">
   jQuery(document).ready(function() {
    jQuery(".eTimer").eTimer({
@@ -429,5 +487,39 @@ Baby Nest – настоящая чудо-помощница <br>
     etNumberShadow: " 0px 0px 0px 0px rgba(0, 0, 0, 0.5)"
    });
   });
+  
+    $('.tovar-block').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 5, 
+    prevArrow:'<button class="arrow arrow-prev"></button>', 
+    nextArrow:'<button class="arrow arrow-next"></button>',  
+    responsive: [
+    {
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+    {
+      breakpoint: 481,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+      }
+    }
+  ]     
+   });
  </script>
 </body></html>
