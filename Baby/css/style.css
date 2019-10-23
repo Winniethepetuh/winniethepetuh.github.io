@@ -16,10 +16,13 @@ body {
   background-color: #ecf6f6;
   background-image: url(../img/bg_star.svg);
 }
+.main-block {
+  width: 320px;
+}
 .main-header h1 {
+  margin-left: 70px;
   text-align: center;
   max-width: 170px;
-  margin-left: 100px;
   font-family: Lobster;
   background-color: #ff6f97;
   margin-top: 50px;
@@ -32,7 +35,6 @@ body {
   max-width: 300px;
   text-align: center;
   font-weight: 900;
-  margin-left: 4%;
 }
 .main-form-header {
   max-width: 400px;
@@ -68,8 +70,9 @@ body {
   background-image: url(../img/checked.jpg);
 }
 .main form input {
+  margin-right: auto;
+  margin-left: auto;
   display: block;
-  margin-left: 90px;
   text-align: center;
   border: 1px solid #fcc212;
   border-radius: 40px;
@@ -82,7 +85,6 @@ body {
   font-weight: 900;
   font-size: 16px;
   border-radius: 10px;
-  margin-left: 76px;
 }
 .main-prices {
   line-height: 1;
@@ -132,6 +134,10 @@ body {
   color: #fff;
   padding: 15px 20px 5px 20px;
   border-radius: 30px;
+}
+.main-btn {
+  width: 237px;
+  margin-left: 12%;
 }
 .baby {
   position: absolute;
@@ -217,7 +223,6 @@ body {
 }
 .eTimer {
   text-align: center;
-  margin-left: 30px;
 }
 .block h3 {
   font-weight: 600;
@@ -243,6 +248,9 @@ body {
 .tovar-block {
   display: inline-block;
   margin-left: 50px;
+}
+.tovar-block a {
+  color: #fff;
 }
 .tovar-block-img {
   display: inline-block;
@@ -464,17 +472,17 @@ body {
   font-family: Lobster;
   padding-top: 30px;
 }
-.main-2 {
+#main-2 {
   margin-left: 5%;
 }
-.main-2 h1 {
+#main-2 h1 {
   font-family: Lobster;
   font-size: 34px;
   color: #ff6f97;
   margin-top: 40px;
   margin-bottom: 10px;
 }
-.main-2 p {
+#main-2 p {
   color: #fff;
   background-color: #8ecdf6;
   font-size: 19px;
@@ -486,10 +494,10 @@ body {
   border-radius: 40px;
   margin-left: 4%;
 }
-.contact {
+#contact {
   background-color: #ff6f97;
 }
-.contact p {
+#contact p {
   padding: 25px 0px 40px 0;
   text-align: center;
   font-weight: 700;
@@ -535,6 +543,53 @@ body {
   right: 0;
   background-image: url(../img/arrow-next.svg);
 }
+.orb {
+  width: 272px;
+  height: 271px;
+  background: #999;
+  display: inline-block;
+  float: left;
+  transition: all 0.2s ease-out;
+}
+.red {
+  background-image: url(../img/baby2.svg);
+}
+.yellow {
+  background-image: url(../img/baby3.svg);
+}
+.blue {
+  background-image: url(../img/baby6.svg);
+}
+.orange {
+  background-image: url(../img/baby4.svg);
+}
+.purple {
+  background-image: url(../img/baby5.svg);
+}
+.green {
+  background-image: url(../img/baby3.svg);
+}
+.marquee {
+  height: 271px;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+}
+.marquee-inner {
+  display: block;
+  width: 1000000%;
+  position: absolute;
+  animation: marquee 20s linear infinite;
+}
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
 /*Media*/
 @media screen and (max-width: 1200px) {
   .baby {
@@ -549,7 +604,7 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .word-text {
-    margin-left: 80px;
+    text-align: center;
   }
   .doctor img {
     width: 0;
@@ -566,9 +621,6 @@ body {
   .people {
     margin-left: -100px;
   }
-  .main-2 {
-    margin-left: 38%;
-  }
   .baby {
     width: 0;
     height: -50px;
@@ -579,14 +631,25 @@ body {
   .plus img {
     width: 0;
   }
-  .main-header {
-    margin-left: 30%;
+  .main-3 {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .main form {
-    margin-left: 29%;
+  .main-btn {
+    width: 237px;
   }
-  .timer {
-    margin-left: 29%;
+  .main-block {
+    margin-right: auto;
+    margin-left: auto;
+    width: 320px;
+  }
+  .main-block input {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-block button {
+    width: 235px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -607,20 +670,8 @@ body {
   .ser-slider img {
     padding-left: 100px;
   }
-  .main-2 {
-    margin-left: 35%;
-  }
-  .main-header {
-    margin-left: 24%;
-  }
-  .main form {
-    margin-left: 22%;
-  }
   .plus-block {
     padding-left: 50px;
-  }
-  .timer {
-    margin-left: 22%;
   }
 }
 @media screen and (max-width: 720px) {
@@ -755,7 +806,7 @@ body {
     margin-left: 20%;
   }
   .main form button {
-    margin-left: 16%;
+    margin-left: 10%;
   }
   .timer {
     margin-left: 0%;
