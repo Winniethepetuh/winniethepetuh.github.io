@@ -186,13 +186,19 @@ body{
 }
 
 .plus{
- 
+  background-color: #ff6f97;
  &-image{
   display: inline-block;
   position: absolute;
-  top: ;
   left: 0;
   z-index: 100;
+  &-mini{
+   display: inline-block;
+   position: absolute;
+   left: 0;
+   z-index: 100;
+   width: 0;
+  }
  }
  &-block{
   z-index: 0;
@@ -202,7 +208,6 @@ body{
   width: 100%;
   vertical-align: top;
   display: inline-block;
-  background-color: #ff6f97;
   right: 0;
   h3{
    font-family: Lobster;
@@ -295,6 +300,7 @@ text-align: center;
 
 
 .doctor{
+  background-color: #d1eaf6; 
  margin: 0;
  h1{
   display: block;
@@ -322,11 +328,19 @@ text-align: center;
    margin-bottom: 30px;
   }
  }
- img{
-  display: inline-block;
+ &-img{
+   display: inline-block;
   position: absolute;
   z-index: 100;
   right: 0;
+  &-mini{
+     display: inline-block;
+     position: absolute;
+     z-index: 0;
+     right: 0;
+     width: 0;
+     height: 0px;
+  }
  }
 }
 
@@ -541,9 +555,9 @@ text-align: center;
 
 #contact{
  background-color: #ff6f97;
+   text-align: center;
  p{
   padding: 25px 0px 40px 0;
-  text-align: center;
   font-weight: 700;
   margin: 0;
   margin-top: -8px;
@@ -655,14 +669,27 @@ text-align: center;
   }
  }
  .doctor{
-  img{
+  &-mini{
+   height: 400px;
+   position: relative;
+  }
+  &-img{
    width: 0;
-   height: -50px;
+   height: 0px;
+   &-mini{
+    width: 320px;
+    height: 320px;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+   }
   }
   &-block{
-  height: 100%;
+   text-align: center;
+   padding: 0;
+   height: 100%;
    width: 100%;
-   padding-right: 100px;
   }
  }
  .ser-slider{
@@ -678,11 +705,24 @@ text-align: center;
   height: -50px;
  }
  .plus{
-  &-block{
-   padding-left: 100px;
+  padding: 0;
+  text-align: center;
+  &-mini{
+   height: 400px;
+   position: relative;
   }
-  img{
+  &-block{
+  padding: 0;
+  }
+  &-image{
   width: 0;
+   &-mini{
+    width: 320px;
+    height: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
+   }
   }
  }
  .main-3{

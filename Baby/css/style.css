@@ -169,12 +169,21 @@ body {
   transform: translateX(-50%);
   top: 10%;
 }
+.plus {
+  background-color: #ff6f97;
+}
 .plus-image {
   display: inline-block;
   position: absolute;
-  top: ;
   left: 0;
   z-index: 100;
+}
+.plus-image-mini {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  z-index: 100;
+  width: 0;
 }
 .plus-block {
   z-index: 0;
@@ -184,7 +193,6 @@ body {
   width: 100%;
   vertical-align: top;
   display: inline-block;
-  background-color: #ff6f97;
   right: 0;
 }
 .plus-block h3 {
@@ -268,6 +276,7 @@ body {
   margin: 5px 0px 70px 16%;
 }
 .doctor {
+  background-color: #d1eaf6;
   margin: 0;
 }
 .doctor h1 {
@@ -296,11 +305,19 @@ body {
 .doctor-block-1 {
   margin-bottom: 30px;
 }
-.doctor img {
+.doctor-img {
   display: inline-block;
   position: absolute;
   z-index: 100;
   right: 0;
+}
+.doctor-img-mini {
+  display: inline-block;
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  width: 0;
+  height: 0px;
 }
 .feedback {
   background-color: #edf6f6;
@@ -496,10 +513,10 @@ body {
 }
 #contact {
   background-color: #ff6f97;
+  text-align: center;
 }
 #contact p {
   padding: 25px 0px 40px 0;
-  text-align: center;
   font-weight: 700;
   margin: 0;
   margin-top: -8px;
@@ -603,14 +620,27 @@ body {
   .word-text {
     text-align: center;
   }
-  .doctor img {
+  .doctor-mini {
+    height: 400px;
+    position: relative;
+  }
+  .doctor-img {
     width: 0;
-    height: -50px;
+    height: 0px;
+  }
+  .doctor-img-mini {
+    width: 320px;
+    height: 320px;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
   }
   .doctor-block {
+    text-align: center;
+    padding: 0;
     height: 100%;
     width: 100%;
-    padding-right: 100px;
   }
   .ser-slider img {
     padding-left: 200px;
@@ -622,11 +652,26 @@ body {
     width: 0;
     height: -50px;
   }
-  .plus-block {
-    padding-left: 100px;
+  .plus {
+    padding: 0;
+    text-align: center;
   }
-  .plus img {
+  .plus-mini {
+    height: 400px;
+    position: relative;
+  }
+  .plus-block {
+    padding: 0;
+  }
+  .plus-image {
     width: 0;
+  }
+  .plus-image-mini {
+    width: 320px;
+    height: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
   }
   .main-3 {
     width: 250px;
