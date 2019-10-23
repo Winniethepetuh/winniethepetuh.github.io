@@ -265,7 +265,7 @@ body {
   width: 185px;
   padding: 0;
 }
-.tovar-block-img button {
+.tovar-block-img a {
   display: block;
   color: #fff;
   font-size: 13px;
@@ -643,7 +643,9 @@ body {
     width: 100%;
   }
   .ser-slider img {
-    padding-left: 200px;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
   .people {
     margin-left: -100px;
@@ -655,6 +657,16 @@ body {
   .plus {
     padding: 0;
     text-align: center;
+  }
+  .plus-block {
+    padding: 0;
+  }
+  .plus-block p {
+    text-align: center;
+    padding: 0;
+  }
+  .plus-block ul {
+    padding: 0;
   }
   .plus-mini {
     height: 400px;
@@ -712,9 +724,6 @@ body {
   .ser-slider img {
     padding-left: 100px;
   }
-  .plus-block {
-    padding-left: 50px;
-  }
 }
 @media screen and (max-width: 720px) {
   .main-2 {
@@ -728,9 +737,6 @@ body {
   }
   .main form {
     margin-left: 13%;
-  }
-  .plus-block {
-    padding-left: 80px;
   }
   .timer {
     margin-left: 13%;
@@ -795,9 +801,6 @@ body {
   .order p {
     margin-left: 80px;
   }
-  .plus-block {
-    padding-left: -20px;
-  }
   .main {
     margin-left: -3%;
   }
@@ -835,20 +838,8 @@ body {
   .main-header {
     margin-left: 12%;
   }
-  .main-form-header {
-    margin-left: -20px;
-  }
   .main-prices {
     margin-left: 0%;
-  }
-  .main form {
-    margin-left: 4%;
-  }
-  .main form input {
-    margin-left: 20%;
-  }
-  .main form button {
-    margin-left: 10%;
   }
   .timer {
     margin-left: 0%;

@@ -284,7 +284,7 @@ text-align: center;
    display: inline-block;
    width: 185px;
    padding: 0;
-   button{
+   a{
     display: block;
     color: #fff;
     font-size: 13px;
@@ -694,7 +694,9 @@ text-align: center;
  }
  .ser-slider{
   img{
-   padding-left: 200px;
+  padding: 0;
+   margin-right: auto;
+   margin-left: auto;
   }
  }
  .people{
@@ -707,6 +709,16 @@ text-align: center;
  .plus{
   padding: 0;
   text-align: center;
+  &-block{
+   padding: 0;
+   p{
+    text-align: center;
+    padding: 0;
+   }
+   ul{
+    padding: 0;
+   }
+  }
   &-mini{
    height: 400px;
    position: relative;
@@ -771,11 +783,6 @@ text-align: center;
    padding-left: 100px;
   }
  }
- .plus{
-  &-block{
-   padding-left: 50px;
-  }
- }
 }
 
 @media screen and (max-width: 720px){
@@ -793,10 +800,6 @@ text-align: center;
    margin-left: 13%;
   }
  }
- .plus{
-  &-block{
-   padding-left: 80px;
-  }}
  .timer{
   margin-left: 13%;
  }
@@ -877,11 +880,6 @@ text-align: center;
    margin-left: 80px;
   }
  }
- .plus{
-  &-block{
-   padding-left: -20px;
-  }
- }
  .main{
   margin-left: -3%;
   &-header{
@@ -927,23 +925,9 @@ text-align: center;
   &-header{
    margin-left: 12%;
   }
-  &-form{
-   &-header{
-   margin-left: -20px;
-  }
-  }
   &-prices{
    margin-left: 0%;
   }
-  form{
-  margin-left: 4%;
-  input{
-   margin-left: 20%;
-  }
-   button{
-    margin-left: 10%;
-   }
- }
  }
  .timer{
   margin-left: 0%;
