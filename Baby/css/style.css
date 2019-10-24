@@ -760,9 +760,6 @@ body {
   .tovar-block {
     margin-left: 150px;
   }
-  .tovar-block button {
-    margin-left: 12%;
-  }
   .arrow {
     height: 0;
     width: 0;
@@ -778,10 +775,10 @@ body {
     height: 100%;
   }
   .main {
-    margin-left: -2%;
+    margin-left: -5%;
   }
   .main-form-header {
-    margin-left: -5%;
+    margin-left: -10%;
   }
   eTimer {
     margin-left: -8px;
@@ -839,9 +836,6 @@ body {
 @media screen and (max-width: 320px) {
   .tovar-block {
     margin-left: 22%;
-  }
-  .tovar-block button {
-    margin-left: 15%;
   }
   .ser img {
     margin-left: -20px;
