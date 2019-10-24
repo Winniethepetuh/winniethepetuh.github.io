@@ -244,6 +244,11 @@ body {
 .tovar {
   background-color: #edf6f6;
 }
+.tovar-btn {
+  position: relative;
+  height: 50px;
+  width: 180px;
+}
 .tovar h1 {
   margin: 0;
   padding-bottom: 50px;
@@ -264,8 +269,15 @@ body {
   display: inline-block;
   width: 185px;
   padding: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
-.tovar-block-img a {
+.tovar-block-img button {
+  top: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 117px;
   display: block;
   color: #fff;
   font-size: 13px;
@@ -273,7 +285,6 @@ body {
   font-weight: 600;
   border-radius: 30px;
   padding: 5px 20px;
-  margin: 5px 0px 70px 16%;
 }
 .doctor {
   background-color: #d1eaf6;
