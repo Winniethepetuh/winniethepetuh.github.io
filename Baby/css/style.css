@@ -68,6 +68,7 @@ body {
   height: 15px;
   color: #feb9cc;
   background-image: url(../img/checked.jpg);
+  margin-right: 10px;
 }
 .main form input {
   margin-right: auto;
@@ -87,11 +88,13 @@ body {
   border-radius: 10px;
 }
 .main-prices {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1;
   text-align: center;
   height: 70px;
   max-width: 300px;
-  margin-left: 30px;
 }
 .main-prices p {
   text-align: center;
@@ -298,6 +301,7 @@ body {
   background-color: #ff6f97;
   color: #fff;
   margin: 0;
+  padding: 20px 0;
 }
 .doctor-block {
   display: inline-block;
@@ -479,6 +483,7 @@ body {
   margin-left: 44%;
 }
 .order p strong {
+  font-weight: 600;
   color: #fe759b;
   position: relative;
 }
@@ -497,6 +502,7 @@ body {
   font-size: 16px;
 }
 .people p strong {
+  font-weight: 550;
   font-family: Lobster;
   padding-top: 30px;
 }
@@ -616,6 +622,24 @@ body {
   }
 }
 /*Media*/
+@media screen and (min-width: 1920px) {
+  .plus-block {
+    padding-left: 20%;
+  }
+  .doctor-block {
+    padding-left: 40%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .plus-block {
+    padding-left: 40%;
+  }
+  .doctor-block {
+    padding-left: 20%;
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1200px) {
   .baby {
     right: -80px;
@@ -786,6 +810,7 @@ body {
   .video {
     margin: 0;
     padding: 0;
+    padding-bottom: -10%;
   }
   .video-block {
     width: 100%;
