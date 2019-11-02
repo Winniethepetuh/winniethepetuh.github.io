@@ -188,6 +188,7 @@
 .feedback-advice p {
   padding-top: 20px;
   font-size: 18px;
+  padding: 0;
 }
 /*Program*/
 .program {
@@ -361,9 +362,13 @@
 @media screen and (max-width: 375px) {
   .main form button {
     width: 320px;
-    margin-left: -5%;
   }
   .feedback-video-block {
     width: 320px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main form button {
+    margin-left: -5%;
   }
 }
