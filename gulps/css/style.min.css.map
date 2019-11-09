@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA,KACI,oBAAoB,CADxB,QAGQ,eAAgB,CACnB,EAGD,0DAAY,CAAZ,kDAAmD","file":"style.min.css","sourcesContent":["body{\r\n    background-color:red;\r\n    h1{\r\n        font-size: 100px;\r\n    }\r\n}\r\na{\r\n    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);\r\n}"]}
