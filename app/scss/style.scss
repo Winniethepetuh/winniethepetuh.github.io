@@ -1,0 +1,27 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+/// main style start ///
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 20px;
+}
+#red{
+    background-color: red;
+}
+#blue{
+    background-color: blue;
+}
+#yellow{
+    background-color: yellow;
+}
+
+/// main-style end ///
+
+
+@import "media";
