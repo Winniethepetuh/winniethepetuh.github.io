@@ -9,11 +9,72 @@
 </head>
 <body>
 
-  <input type="text" placeholder="Number" id="input">
+    <!---------- MAIN ----------->
+      <div class="main">
+         <div class="container">
 
-  <button id="btn">Click!</button>
+              <div class="header">
+                  <div class="header_logo">
+                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="130" height="60" viewBox="0 0 130 60">
+                        <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="130" height="60" xlink:href="data:img/png;base64,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"/>
+                     </svg>
+                   </div>
 
-  <p id="text">Kill</p>
+                      <div class="container_slider">
+                          <div class="container_slider__menu">
+                              <nav id="menu">
+                                  <ul>
+                                  <li class="active"><a  href="#">Главная</a><span>01</span></li>
+                                  <li><a href="#">Про компанию</a><span>02</span></li>
+                                  <li><a href="#">Услуги</a><span>03</span></li>
+                                  <li><a href="#">Технологии</a><span>04</span></li>
+                                  <li><a href="#">Портфолио</a><span>05</span></li>
+                                  <li><a href="#">Видео</a><span>06</span></li>
+                                  <li><a href="#">Блог</a><span>07</span></li>
+                                  <li><a href="#">Контакты</a><span>08</span></li>
+                                  </ul>
+                                  </nav>
+                          </div>
+                              
+                      
+                          <div id="btn">
+                             
+                             <div class="btn-menu">
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="12" viewBox="0 0 18 12">
+                                               <image id="Shape_2_copy_2" data-name="Shape 2 copy 2" width="18" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAMCAYAAABvEu28AAAAL0lEQVQokWP8////fwYqACZqGAICLAwMDIwYomQAqrmIql4bDWw6GTTIApuBgQEAXiwGHM8UAY4AAAAASUVORK5CYII="/>
+                                               </svg>
+                                               <p>MENU</p>
+                             </div>
+                              <div id="menu" class="header_menu"></div>
+                          </div>
+                   </div>
+
+                <div class="header_phone">
+                  <p>+38 (067) 829 32 34 </p>
+                </div>
+
+              </div>
+        </div>
+
+        <div class="container">
+            <div class="main_heading">
+                <h1 class="main_heading__large">
+                Науково-виробниче <br>
+                підприємство «Екозахист»</h1>
+               <h1 class="main_heading__small">
+                 ТОВ НП <br>
+                «Екозахист»
+                </h1>
+                <p>Професійні послуги з охорони навколишнього середовища</p>
+                <button>НАШИ ПОСЛУГИ</button>
+           </div>
+        </div>
+      </div>
+    <!---------- MAIN END ----------->
+      
+    
+  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>

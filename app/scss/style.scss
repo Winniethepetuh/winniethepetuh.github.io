@@ -1,25 +1,196 @@
 @import "vars";
 @import "libs";
 @import "fonts";
+/// DEFAULT ///
+body{
+    color: #fff;
+}
+.container{
+    max-width: 1200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-fluid{
+    width: 100%;
+    margin: 0;
+}
+/// DEFAULT END ///
+
+
+
+
+/// HEADER ///
+
+.active{
+   a{
+    color: #afafaf;
+   }
+}
+a{
+    color: #fff;
+}
+.container_slider {
+    width: 93%;
+    position: absolute;
+    top: 75px;
+    z-index: 999;
+    &__menu{
+        width: 112.6%;
+        margin-left: -11%;
+    }
+   }
+    
+   #menu {
+    padding: 50px 0;
+    display: none;
+    background-color: #75974f;
+    opacity: 0.95;
+     a{
+            display: block;
+            text-align: center;
+    }
+    ul {
+        overflow: hidden;
+        margin: 50px auto;
+        padding: 0;
+        max-width: 500px;
+        width: 100%;
+       }
+       li {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        padding: 0;
+        width: 500px;
+        display: block;
+        position: relative;
+        &:after {
+            display: block;
+            content: "";
+            height: 1px;
+            width: 0%;
+            background-color: #fff;
+            transition: width .3s ease-in-out;
+        }
+        &:hover{
+            span{
+                color: #fff;
+            }
+        }
+        &:hover:after,
+        &:focus:after {
+         width: 100%;
+        }
+        a {
+            background: #75974f;
+            text-align: left;
+            text-decoration: none;
+            font-size: 18px;
+            width: 100%;
+            opacity: 2;
+            font-family: 'Gilroy-Bold';
+            font-size: 22px;
+           }
+           span{
+            font-family: 'Gilroy-Regular';
+            font-size: 22px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: #aaa;
+          }
+       }   
+   }
+   
+    
+   #btn {
+    margin: 0 auto;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+     p{
+        display: inline-block;
+        color: #fff;
+        font-family: 'Gilroy-Bold';
+       }
+       span {
+        position: relative;
+        top: 12px;
+        left: 50%;
+        display: block;
+        margin-left: -25px;
+        width: 50px;
+        height: 5px;
+        border-radius: 5px;
+        background: #fff;
+        box-shadow: inset 1px 1px 2px #ddd;
+       }
+   }
+   .btn-menu{
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+/// HEADER END ///
 
 /// main style start ///
+.main{
+    background: url(../img/main_bg.png) center no-repeat;
+    height: 900px;
+    &_heading{
+        margin-top: 230px;
+        text-align: center;
+        h1{
+            font-family: 'Gilroy-SemiBold';
+        }
+        &__large{
+            font-size: 62px;
+        }
+        &__small{
+            font-size: 32px;
+            display: none;
+        }
+        p{
+            font-family: 'Gilroy-Regular';
+            font-size: 22px;
+            margin-top: 40px;
+        }
+        button{
+            margin-top: 50px;
+            text-align: center;
+            font-family: serif;
+            width: 180px;
+            height: 57px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Gilroy-Bold';
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+        }
+    }
+}
 
-.circle{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+
+
+.header{
     display: inline-block;
-    margin: 20px;
+    width: 100%;
+    &_logo{
+        display: inline-block;
+        margin-left: 5%;
+        padding-top: 60px;
+    }
+    &_phone{
+        font-family: 'Gilroy-Bold';
+        font-size: 14px;
+        display: block;
+        float: right;
+        padding-top: 70px;
+    }
 }
-#red{
-    background-color: red;
-}
-#blue{
-    background-color: blue;
-}
-#yellow{
-    background-color: yellow;
-}
+
 
 /// main-style end ///
 

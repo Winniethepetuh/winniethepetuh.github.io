@@ -1,0 +1,69 @@
+/// 1920 ///
+@media screen and (min-width: 1920px) {
+  
+}
+/// 1920 END ///
+
+
+
+
+/// 1440 ///
+@media screen and (min-width: 1440px) {
+  
+}
+/// 1440 END ///
+
+
+
+
+/// 992 ///
+@media screen and (max-width: 992px) {
+  
+}
+/// 992 END ///
+
+
+
+/// 768 ///
+@media screen and (max-width: 768px) {
+  .main_heading{
+    margin-top: 150px;
+  }
+}
+/// 768 END ///
+
+
+
+
+/// 568 ///
+@media screen and (max-width: 568px) {
+  .main{
+    background-position-x: -950px;
+  }
+}
+/// 568 END ///
+
+
+
+
+/// 414 ///
+@media screen and (max-width: 414px) {
+  .header{
+    &_phone{
+      display: none;
+    }
+    &_menu{
+      position: static;
+      float: right;
+    }
+  }
+  .main_heading{
+    &__large{
+      display: none;
+    }
+    &__small{
+      display: block;
+    }
+  }
+}
+/// 414 END ///

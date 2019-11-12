@@ -1,18 +1,28 @@
-var input = "";
+$(function() {
+  var openBtn = $('#btn'),
+      slideMenu = $('#menu'),
+      layer = $('<div />').addClass('layer'),
+      close = $('#close');
+  
+  
+  openBtn.on("click", function() {
+  if (slideMenu.is(':hidden')) {
+  layer.appendTo('body');
+  slideMenu.slideDown(300);
+  }
+  });
+  close.on("click", function(){
+    if (sllideMenu.is(':hidden')) {
+    }
+    else {
+      slideMenu.slideUp(300);
+    layer.remove();
+    }
+  });
+ });
+ 
 
-document.getElementById("btn").onclick = function() {
-    input = document.getElementById("input").value;
-    document.getElementById("text").innerHTML = message[input]
-    alert(massive[input]);
-}
 
-var massive = new Array();
-
-massive[0] = "pizza";
-
-massive[1] = "chocolate";
-
-var message = ["Higtning day", "Hello, I love you"];
-
-massive.push("Back");
-message.push("I all be back")
+ document.getElementById("btn").onclick = function() {
+  document.getElementById("btn").style.display = 'none';
+ };
