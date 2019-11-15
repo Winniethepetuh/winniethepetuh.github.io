@@ -1,0 +1,42 @@
+@import "fonts";
+
+/// main style start ///
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: url(../img/main__bg.svg) right bottom no-repeat;
+    background-position: fixed;
+    &__text{
+        text-align: center;
+        font-size: 14.4px;
+        &_small{
+            font-size: 18px;
+            margin-top: 15px;
+        }
+        &_href{
+            margin-top: -10px;
+            a{
+                color: #0288D1;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 18px;
+            }
+        }
+        &_span{
+            margin-top: 25px;
+            color: #37474F;
+        }
+    }
+}
+
+
+/// main-style end ///
+
+
+@import "media";
