@@ -141,6 +141,13 @@ body{
         align-items: center;
         flex-direction: column;
         text-align: center;
+        margin-left: -30%;
+        &-1{
+            margin-left: 10%;
+        }
+        &-2{
+            margin-left: 40%;
+        }
         &_img{
             img{
                 width: 100px;
@@ -187,6 +194,7 @@ body{
         max-width: 900px;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
         p{
             line-height: 1.8;
             span{
@@ -196,7 +204,7 @@ body{
         }
         &::before{
             position: absolute;
-            left: 6%;
+            left: -100px;
             content: '';
             width: 80px;
             height: 80px;
@@ -236,6 +244,7 @@ body{
             color: #2997ab;
             font-weight: 500;
             text-decoration: none;
+            font-size: 18px;
             &:hover{
                 color: #1d517b
 
@@ -243,6 +252,9 @@ body{
         }
         span{
             font-size: 11px;
+            a{
+                font-size: 11px;
+            }
         }
     }
 }
@@ -445,6 +457,7 @@ body{
                 margin-left: 40px;
                 font-size: 13px;
                 color: #000;
+                cursor: pointer;
                 &:hover{
                     color: #2e8fc7;
                 }
@@ -470,9 +483,8 @@ body{
                 text-align: center;
                 font-size: 13px;
                 margin-left: -6%;
-                cursor: pointer;
-                &:hover{
-                    color: #2e8fc7;
+                a {
+                    margin-left: 0px;
                 }
             }
         }
