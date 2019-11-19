@@ -521,6 +521,11 @@ p{
 }
 .slider{
     height: 80px;
+    &__img{
+        img{
+            padding-left: 30px;
+        }
+    }
 }
 .bx-wrapper{
     height: 100px;
