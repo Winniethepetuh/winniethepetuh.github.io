@@ -7,4 +7,4 @@ $(document).ready(function(){
     });
   });
 
-$('.parallax-window').parallax({imageSrc: '/img/main__bg.png'});
+$('.parallax-window').parallax({imageSrc: './img/main__bg.png'});
