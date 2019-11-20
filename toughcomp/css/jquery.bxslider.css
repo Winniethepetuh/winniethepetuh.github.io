@@ -33,6 +33,7 @@ ul.bxslider {
   margin-left: auto;
   margin-right: auto;
 }
+
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
   position: absolute;
@@ -106,13 +107,20 @@ ul.bxslider {
 }
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
-  top: 50%;
+  top: 20%;
   margin-top: -16px;
   outline: 0;
   width: 32px;
   height: 32px;
   text-indent: -9999px;
-  z-index: 9999;
+  background-color: #fff;
+  background: url();
+  z-index: 999;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.bx-wrapper:hover a{
+    background-color: #666666;
 }
 .bx-wrapper .bx-controls-direction a.disabled {
   display: none;
