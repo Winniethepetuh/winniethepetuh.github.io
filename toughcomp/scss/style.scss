@@ -279,6 +279,9 @@ p{
 .opportunities{
     font-size: 12px;
     padding-bottom: 50px;
+    a{
+        font-size: 12px;
+    }
 }
 //---------------------- ABOUT-END --------------------------//
 
@@ -405,6 +408,7 @@ p{
     font-size: 14px;
     font-family: 'Lato' serif;
     font-weight: 300;
+    padding-left: 5px;
     &-new{
         display: flex;
         justify-content: flex-end;
@@ -420,6 +424,10 @@ p{
             font-weight: 300;
             padding: 5px;
         }
+    }
+    &-small{
+        padding-top: 10px;
+        vertical-align: top;
     }
     &-p{
         margin-top: 80px;
@@ -442,11 +450,35 @@ p{
                     background-color: #f76565
                 }
             }
+            input::placeholder  {
+                color: #fff;
+            }
+        }
+        &-2{
+            width: 17%;
+            display: inline-block;
+        }
+        &-3{
+            width: 27%;
+            display: inline-block;
+        }
+        &-4{
+            width: 14%;
+            display: inline-block;
+        }
+        &-5{
+            width: 17%;
+            display: inline-block;
+        }
+        &-6{
+            width: 11.45%;
+            display: inline-block;
         }
     }
     &-1{
         width: 10%;
         display: inline-block;
+        margin-top: -100px;
     }
     &-2{
         width: 18%;
@@ -492,6 +524,11 @@ p{
     }
     &__btn{
         float: right;
+    }
+    &__get{
+        input{
+        border-radius: 5px;
+      }
     }
 }
 //---------------------- CONTACT-END --------------------------//
@@ -623,8 +660,19 @@ p{
             padding-left: 30px;
         }
     }
+    &:hover{
+        .bx-next{
+            display: block;
+        }
+    }
 }
 .bx-wrapper{
     height: 100px;
-}
+    &:hover{
+        a{
+            display: inline-block;
+            margin-top: 100px;
+          }
+    }
+  }
 @import "media";
