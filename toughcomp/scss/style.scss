@@ -231,9 +231,9 @@ p{
             font-weight: 500;
             text-decoration: none;
             font-size: 18px;
+            font-weight: 700;
             &:hover{
                 color: #1d517b
-
             }
         }
         span{
@@ -289,6 +289,24 @@ p{
 
 //---------------------- GET --------------------------//
 .get{
+    &__optional{
+        height: 50px;
+        background-color: #efefef;
+        display: block;
+        width: 100%;
+    }
+    &__btn{
+        a{
+            width: 102px;
+            height: 36px;
+            text-align: center;
+            padding: 5px;
+            line-height: 1.5;
+            font-weight: 400;
+            font-size: 14px;
+            background-color: #2997ab;
+        }
+    }
     &__form{
         p{
             font-size: 13px;
@@ -354,6 +372,10 @@ p{
                 font-size: 13px;
                 margin-top: 20px;
             }
+            a{
+                font-size: 16px;
+                font-weight: 600;
+            }
         }
         img{
             margin-left: auto;
@@ -376,6 +398,81 @@ p{
 }
 #get_address{
     display: none;
+}
+.opt{
+    border: 1px solid #dbdbdb;
+    height: 50px;
+    font-size: 14px;
+    font-family: 'Lato' serif;
+    font-weight: 300;
+    &-new{
+        display: flex;
+        justify-content: flex-end;
+        button{
+            border-radius: 50%;
+            border: 1px solid #e1e1e1;
+            box-shadow: 1px,1px,1px,1px rgba(0,0,0, 0.3);
+            width: 30px;
+            height: 30px;
+        }
+        span{
+            font-size: 14px;
+            font-weight: 300;
+            padding: 5px;
+        }
+    }
+    &-p{
+        margin-top: 80px;
+    }
+    &-inp{
+        input{
+            margin-top: 10px;
+            border-radius: 5px;
+            height: 30px;
+            cursor: pointer;
+        }
+        &-del{
+            color: #fff;
+            input{
+                background: #e69a9a;
+                color: #fff;
+                text-align: center;
+                font-size: 14px;
+                &:hover{
+                    background-color: #f76565
+                }
+            }
+        }
+    }
+    &-1{
+        width: 10%;
+        display: inline-block;
+    }
+    &-2{
+        width: 18%;
+        display: inline-block;
+        margin-left: -0.7%;
+    }
+    &-3{
+        width: 26%;
+        display: inline-block;
+        margin-left: -0.7%;
+    }
+    &-4{
+        width: 15%;
+        display: inline-block;
+        margin-left: -0.7%;
+    }
+    &-5{
+        width: 18%;
+        display: inline-block;
+        margin-left: -0.7%;
+    }
+    &-6{
+        display: inline-block;
+        width: 13.45%;
+        margin-left: -0.7%;
+    }
 }
 //---------------------- GET-END --------------------------//
 
