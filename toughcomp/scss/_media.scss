@@ -1,4 +1,41 @@
 @media screen and (max-width: 950px){
+    .get{
+        &__input{
+            &_form{
+                span{
+                    display: block;
+                    padding-left: 10px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .opt{
+        display: none;
+    }
+    .get__optional{
+        display: none;
+    }
+    .opt-1{
+        width: 100%;
+    }
+    .opt-inp{
+        &-2{
+            width: 100%;
+        }
+        &-3{
+            width: 100%;
+        }
+        &-4{
+            width: 100%;
+        }
+        &-5{
+            width: 100%;
+        }
+        &-6{
+            margin-left: 10px;
+        }
+    }
     .products{
         p{
             padding-left: 5%;
@@ -8,6 +45,11 @@
 
 
 @media screen and (max-width: 720px) {
+    .get__btn{
+        a{
+            margin-left: 25%;
+        }
+    }
     .col-md-3{
         img{
             margin-left: auto;

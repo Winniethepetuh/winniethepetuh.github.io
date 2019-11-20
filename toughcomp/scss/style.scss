@@ -230,10 +230,15 @@ p{
             color: #2997ab;
             font-weight: 500;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 700;
             &:hover{
                 color: #1d517b
+            }
+        }
+        p{
+            a{
+                font-size: 12px;
             }
         }
         span{
@@ -244,6 +249,7 @@ p{
         }
     }
 }
+
 //---------------------- PRODUCTS-END --------------------------//
 
 
@@ -292,6 +298,14 @@ p{
 
 //---------------------- GET --------------------------//
 .get{
+    &__input{
+        &_form{
+            span{
+                display: block;
+                display: none;
+            }
+        }
+    }
     &__optional{
         height: 50px;
         background-color: #efefef;
@@ -374,9 +388,11 @@ p{
             p{
                 font-size: 13px;
                 margin-top: 20px;
+                a{
+                    font-weight: 400;
+                }
             }
             a{
-                font-size: 16px;
                 font-weight: 600;
             }
         }
@@ -421,6 +437,7 @@ p{
             padding: 1px 1px 3px 2px;
         }
         span{
+            display: inline-block;
             font-size: 14px;
             font-weight: 300;
             padding: 5px;
@@ -474,6 +491,9 @@ p{
         &-6{
             width: 11.45%;
             display: inline-block;
+        }
+        &-7{
+            display: block;
         }
     }
     &-1{
