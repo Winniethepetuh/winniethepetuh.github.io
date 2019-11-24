@@ -1,0 +1,113 @@
+@media screen and (max-width:992px) {
+
+    .header__get{
+        a{
+            color: #333333;
+        font-size: 15px;
+        font-family: 'Gotham';
+        border: none;
+        padding: 0;
+        border-radius: 0px;
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 15px;
+        width: auto;
+        height: auto;
+        &:hover{
+            color: #e4151a;
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0);
+        }
+        }
+    }
+
+    .collapse{
+        position: relative;
+        right: 0;
+    }
+
+    .application{
+        &__header_stage{
+            display: block;
+            &-li{
+                display: block;
+            }
+        }
+        &__header_liney{
+            display: none;
+        }
+        ul{
+            padding: 0;
+            width: 161px;
+            display: block;
+            li{
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:720px) {
+    .slick-dots{ //точки слайдера
+        li{
+            display: none;
+        }
+    }
+
+    .slide{ // слайд
+        height: 600px;
+    }
+
+    .main{//главный синий блок
+        height: 300px;
+        &__content{
+            p{
+                text-align: center;
+            }
+            &_btn{
+                width: 100%;
+                margin: 0;
+                a{
+                    width: 100%;
+                }
+            }
+            &_phone{
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin: 0;
+                strong{
+                    display: block;
+                    margin: 0;
+                    line-height: 3;
+                    &::before{
+                        display: none;
+                    }
+                }
+                span{
+                    display: inline-block;
+                    margin: 0
+                }
+                p{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .footer .footer__block_nav{ //подвал
+        ul{
+            padding-left: 0;
+            text-align: center;
+            li{
+                display: block;
+                margin-left: 0;
+            }
+        }
+    }
+    .footer__block_contact{
+        flex-direction: column;
+        span{
+            display: none;
+        }
+    }
+}
