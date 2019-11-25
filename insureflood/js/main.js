@@ -1,6 +1,6 @@
 $('.slick').slick({
-    autoplay: false,
-    autoplaySpeed: 5000,
+    autoplay: true,
+    autoplaySpeed: 2000,
     fade: true,
     arrows: false,
     slidesToShow: 1,
@@ -50,3 +50,7 @@ document.getElementById("slick-slide-control04").onclick = function(){
 $(document).ready(function() {
     $('.patient-quote').flexslider();    
   });
+
+document.getElementById("form_button").onclick = function(){
+    document.getElementById("form").style.display = "none";
+}

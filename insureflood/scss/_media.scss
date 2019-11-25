@@ -47,6 +47,11 @@
 }
 
 @media screen and (max-width:720px) {
+    .navbar-brand{
+        img{
+            margin-left: 0;
+        }
+    }
     .slick-dots{ //точки слайдера
         li{
             display: none;

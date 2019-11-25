@@ -26,6 +26,7 @@ body{
             color: #e4151a;
             border-radius: 20px;
             font-size: 12px;
+            font-weight: bold;
             &:hover{
                 background-color: #e4151a;
                 color: #fff;
@@ -86,6 +87,11 @@ body{
         }
     }
 }
+.navbar-brand{
+    img{
+        margin-left: 60%;
+    }
+}
 .nav{
      //для надписей HOME PROGRAM и т.д.
      &-item{
@@ -108,6 +114,12 @@ body{
 .collapse{
     position: absolute;
     right: 0;
+    ul{
+        li{
+            font-weight: 600;
+            color: #333333;
+        }
+    }
 }
 .active{
     a{
@@ -234,8 +246,8 @@ body{
         margin-left: 10px;
         box-shadow: 10px, 10px, 10px, rgba(0,0,0, 0.7);
         button{
-            width: 15px;
-            height: 15px;
+            width: 17px;
+            height: 17px;
             border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
             border: 3px solid #283288;
             background-color: rgba(225, 225, 225, 0);
@@ -440,9 +452,23 @@ body{
     background: rgba(0,0,0,0);
     border: none;
     margin: 0;
+    padding: 50px 0;
 }
 .flex-control-nav{
     position: static;
+}
+.flex-active-slide{
+    p{
+        span{
+            text-align: center;
+        font-family: 'Gotham-Light';
+        font-size: 15px;
+        color: #555;
+        }
+    }
+}
+.flex-direction-nav{
+    display: none;
 }
 //----------------INSURE-END---------------- //
 
@@ -589,6 +615,7 @@ body{
         &_header{
             img{
                 max-width: 660px;
+                margin-bottom: 20px;
             }
         }
         &_text{
@@ -633,6 +660,7 @@ body{
                         width: 15px;
                         height: 15px;
                         display: inline-block;
+                        margin-right: 5px;
                     }
                 }
             }
@@ -673,7 +701,6 @@ body{
             &:hover{
                 text-decoration: none;
                 color: #555555;
-                font-size: 20px;
             }
         }
     }
@@ -704,6 +731,16 @@ body{
             color: #000;
             font-weight: lighter;
             display: inline;
+        }
+    }
+}
+.program{
+    p{
+        color: #333333;
+    }
+    ul{
+        li{
+            color: #333333;
         }
     }
 }
@@ -791,6 +828,7 @@ body{
                 width: 36px;
                 height: 36px;
                 display: inline-block;
+                margin-right: 10px;
             }
             p{
                 display: inline-block;
@@ -936,6 +974,16 @@ body{
                     }
                 }
             }
+
+            &-made{
+                ul{
+                    li{
+                        &::before{
+                            content: '✔';
+                        }
+                    }
+                }
+            }
         }
         &_liney{
             position: absolute;
@@ -956,12 +1004,26 @@ body{
         p{
             color: #555555;
             font-family: 'Gotham-Light';
-            font-size: 15px;
+            font-size: 16px;
+            max-width: 260px;
         }
         input{
             width: 100%;
             background-color: #f8f8f8;
-            border: 1px solid #e1e1e1;
+            border: 2px solid #e1e1e1;
+        }
+        &_info{
+            &-radio{
+                input[type="radio"]{
+                    width: 20px;
+                    height: 20px;
+                    background-color: #fff;
+                    border: 1px solid #e1e1e1;
+                }
+            }
+            p{
+                display: inline-block;
+            }
         }
     }
 
@@ -979,11 +1041,14 @@ body{
     }
 
     &__btn{
+        display: inline-block;
         button{
             background: #283288;
             border-radius: 25px;
             color: #fff;
             padding: 5px 20px;
+            margin: 5px;
+            display: inline-block;
             &:hover{
                 opacity: 0.7;
                 color: #fff;
@@ -1057,8 +1122,10 @@ body{
         }
         &_nav{
             margin-left: -2%;
-            margin-bottom: 5px;
+            margin-top: 20px;
+            margin-bottom: -10px;
             ul{
+                margin: 0;
                 li{
                     display: inline-block;
                     font-size: 14px;
@@ -1091,7 +1158,7 @@ body{
                 color: #e41518;
             }
             span{
-                margin: 0px 5px;
+                margin: 0px 10px;
                 font-family: serif;
             }
             img{
