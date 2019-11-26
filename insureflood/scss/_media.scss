@@ -1,4 +1,37 @@
+@media screen and (max-width:1200px) {
+    .news{
+        &__bar{
+            margin-left: 50px;
+        }
+    }
+    .about{
+        &__bar{
+            margin-left: 50px;
+        }
+    }
+}
+
 @media screen and (max-width:992px) {
+    .news{
+        &__bar{
+            margin-left: 0px;
+        }
+    }
+    .about{
+        &__content_header{
+            img{
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        &__bar{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+        }
+    }
 
     .header__get{
         a{
@@ -47,6 +80,40 @@
 }
 
 @media screen and (max-width:720px) {
+    .news{
+        &__column{
+            border-color: #fff;
+        }
+        &__bar{
+            display: none;
+        }
+    }
+    .insure{
+        &__img{
+            display: block;
+            img{
+                width: 70%;
+                display: block;
+                margin-bottom: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+    .header{
+        &__top{
+            &_liney{
+                a{
+                    padding-left: 20%;
+                }
+                span{
+                    a{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
     .navbar-brand{
         img{
             margin-left: 0;
@@ -113,6 +180,50 @@
         flex-direction: column;
         span{
             display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+   .footer .footer__block{
+        &_contact{
+            display: block;
+            p{
+                display: block;
+                text-align: center;
+            }
+            a{
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                text-align: center;
+            }
+    }
+    }
+            
+    .get__content_file{
+        &_download{
+            img{
+                vertical-align: top;
+            }
+            button{
+                padding: 5px 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header{
+        &__top{
+            &_liney{
+                a{
+                    padding-left: 2%;
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }
