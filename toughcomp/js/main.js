@@ -10,4 +10,4 @@ $(document).ready(function(){
     });
   });
 
-$('.parallax-window').parallax({imageSrc: './img/main__bg.png'});
+$('.parallax-window').parallax({imageSrc: 'https://winniethepetuh.github.io/toughcomp/img/main__bg.png'});
