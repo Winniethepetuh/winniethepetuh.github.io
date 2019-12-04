@@ -1,4 +1,9 @@
 @media screen and (max-width:1200px) {
+    .about__content_header{
+        img{
+            max-width: 550px;
+        }
+    }
     .news{
         &__bar{
             margin-left: 50px;
@@ -12,6 +17,14 @@
 }
 
 @media screen and (max-width:992px) {
+    .flood__about{
+        margin-left: 5%;
+    }
+    .navbar-brand{
+        img{
+            margin-top: -10px;
+        }
+    }
     .news{
         &__bar{
             margin-left: 0px;
@@ -61,6 +74,11 @@
     .application{
         &__header_stage{
             display: block;
+            ul{
+                display: block;
+                margin-left: auto;
+            margin-right: auto;
+            }
             &-li{
                 display: block;
             }
@@ -80,6 +98,29 @@
 }
 
 @media screen and (max-width:720px) {
+    
+    .quess{
+        span{
+            &::before{
+                display: none;
+            }
+        }
+    }
+    .application{
+        &__bar{
+            &-5{
+                position: absolute;
+                z-index: 99999;
+                width: 90%;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -5650px;
+            }
+            &-footer{
+                height: 400px;
+            }
+        }
+    }
     .news{
         &__column{
             border-color: #fff;
@@ -185,6 +226,27 @@
 }
 
 @media screen and (max-width: 480px) {
+    .application{
+        &__bar{
+            &-5{
+                bottom: -5750px;
+            }
+            &-footer{
+                height: 500px ;
+            }
+        }
+    }
+    
+    .header__top_liney{
+        a{
+            margin-left: 0px;
+            font-size: 14px;
+            &::before{
+                display: none;
+            }
+        }
+    }
+
    .footer .footer__block{
         &_contact{
             display: block;
@@ -197,6 +259,11 @@
                 margin-right: auto;
                 display: block;
                 text-align: center;
+            }
+            img{
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
             }
     }
     }

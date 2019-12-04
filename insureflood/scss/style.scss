@@ -1,6 +1,6 @@
 @import "fonts";
 body{
-    font-family: 'gothambold1' !important;
+    font-family: 'Gotham';
     color: #fff;
 }
 .active__for_button{
@@ -63,6 +63,7 @@ body{
         height: 30px;
         position: relative;
         &_liney{
+            font-family: 'gothambold1';
             position: absolute;
             background: #283288;
             width: 77%;
@@ -116,6 +117,9 @@ body{
         img{
             margin-left: 30%;
         }
+    }
+    &-nav{
+        background-color: #fff !important;
     }
 }
 .nav{
@@ -277,14 +281,20 @@ body{
             width: 18px;
             height: 18px;
             border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
-            border: 3px solid #283288;
+            border: 2px solid #283288;
             background-color: rgba(225, 225, 225, 0);
             transform: rotate(-45deg);
             margin-top: 20px;
             text-indent: 10px;
             white-space: nowrap;
             overflow: hidden;
+            outline: none;
         }
+      }
+  }
+  .slick-active{
+      button{
+          background-color: #283288 !important;
       }
   }
 //----------------SLIDER-END---------------- //
@@ -373,6 +383,12 @@ body{
 //----------------FLOOD---------------- //
 .flood{
     text-align: center;
+    &__footer{
+        display: block !important;
+    width: 400vh !important;
+    margin-left: -10% !important;
+    margin-right: -10% !important;
+    }
     &__text{
         padding: 50px 0px;
         color: #000;
@@ -867,6 +883,7 @@ body{
     border-bottom: 1px solid #eaeaea;
     padding: 50px 0px;
     font-size: 12px;
+    
     &__form{
         input{
             height:40px;
@@ -885,6 +902,7 @@ body{
             color: #283288;
             border-radius: 25px;
             border: 1px solid #283288;
+            margin-top: 10px;
             transition: all 0.7s;
             &:hover{
                 color: #fff;
@@ -938,11 +956,13 @@ body{
             }
         }
     }
-    span{
-        font-family: 'Gotham-Medium';
-        color: #555555;
-        font-weight: bold;
-        font-size: 18px;
+    &__text{
+        span{
+            font-family: 'Gotham-Medium';
+            color: #555555;
+            font-weight: bold;
+            font-size: 18px;
+        }
     }
 }
 //----------------NEWS-END---------------- //
@@ -1312,6 +1332,7 @@ body{
 //---------------------- FOOTER --------------------------//
 .footer{
     background-color: #f2f2f2;
+    
     .footer__block{
         padding: 70px 70px 20px 70px;
         display: flex;
@@ -1366,6 +1387,7 @@ body{
             }
             img{
                 margin-top: 8px;
+                cursor: pointer;
             }
         }
         &_info{
@@ -1374,6 +1396,9 @@ body{
             font-family: 'Gotham-Light';
             max-width: 500px;
             text-align: center;
+            a{
+                color: #2f324e;
+            }
         }
     }
 }
