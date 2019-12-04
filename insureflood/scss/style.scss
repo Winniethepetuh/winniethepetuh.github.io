@@ -212,7 +212,7 @@ body{
           align-items: center;
           flex-direction: column;
           font-family: 'Proxima Nova Th';
-          h1{
+          h2{
             font-size: 20px;
             text-align: center;
             span{
@@ -383,11 +383,12 @@ body{
 //----------------FLOOD---------------- //
 .flood{
     text-align: center;
-    &__footer{
-        display: block !important;
-    width: 400vh !important;
-    margin-left: -10% !important;
-    margin-right: -10% !important;
+    &__ul{
+        ul{
+            li{
+                margin-bottom: 20px;
+            }
+        }
     }
     &__text{
         padding: 50px 0px;
@@ -797,6 +798,7 @@ body{
                 font-family: 'gothambold1';
                 position: relative;
                 display: inline-block;
+                margin-bottom: 20px;
                 &::before{
                     content:"\2022";
                     font-size: 26px;

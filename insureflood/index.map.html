@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us - Insure Flood</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+</head>
+<!-- 
+  ___¶¶_¶¶¶¶¶¶¶____________________________¶¶¶¶¶_¶¶_¶¶
+___¶¶___¶¶¶¶¶¶¶________________________¶¶¶¶¶_¶____¶¶
+___¶¶_____¶¶¶¶¶¶¶_____________________¶¶¶¶¶¶¶_____¶¶
+__¶¶¶__¶¶___¶¶¶¶¶¶¶_________________¶¶¶¶¶¶¶___¶¶__¶¶
+__¶¶¶_____¶___¶¶¶¶¶¶¶_____¶¶______¶¶¶¶¶¶¶¶__¶_____¶¶
+__¶¶¶¶¶_____¶__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶__¶___¶¶¶_¶¶
+___¶¶___¶¶___¶¶_¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶__¶¶_____¶¶
+___¶¶_¶____¶¶_¶¶¶¶¶¶¶¶¶¶¶¶___¶¶¶¶¶¶¶¶¶¶¶¶¶___¶¶¶¶_¶¶
+___¶¶____¶¶_¶¶¶¶¶¶¶¶¶¶¶¶_11111_¶¶¶¶¶¶¶¶¶¶¶¶¶_____¶¶¶
+___¶¶¶¶¶¶__¶¶¶_111_¶¶¶¶_1111111_¶¶¶_111111_¶¶¶¶__¶¶
+____¶¶____¶¶1111111_1¶1111111111_¶1111111111¶¶¶¶¶¶¶
+____¶¶___¶_111_$$$$$__¶111111111¶1_$$$$$$1111¶¶¶¶¶
+_____¶¶_¶¶111$$$$$$$$$_¶1111111_1_$$$$$$$$1111¶¶¶¶
+______¶¶¶_11_$$$$$$$$$_¶1111111¶_$$$$$$$$$_111¶¶¶
+______¶¶¶_11_$$$$$$$$$__1111111¶_$$$$$$$$$_11_¶¶¶¶
+______¶¶¶¶111$$$$$$$$$__1111111¶1_$$$$$$$$111_¶¶¶¶
+______¶¶¶¶¶___$$$$$$$1__1___111_¶11_$$$$__11¶¶¶¶¶¶
+______¶¶¶¶¶¶¶¶¶¶_$$$$__1__¶¶¶___11_¶¶¶_¶¶¶¶¶¶¶¶¶¶¶
+______¶¶¶¶¶¶__1111111___¶¶¶¶¶¶¶__1111111111_¶¶¶¶¶¶
+______¶¶¶¶_111111111¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶111111111__¶¶¶¶¶
+______¶___11111111111¶¶¶¶¶¶¶¶¶¶¶¶¶_1111111111____¶
+_¶¶¶¶¶¶¶¶¶¶¶¶¶¶_1111_1¶______¶¶¶¶_1111111_¶¶¶¶¶¶¶¶¶¶¶¶¶
+_______¶__¶¶¶¶__111111_¶_______¶_1111111________
+__¶¶____¶_____¶¶_111111________¶11111111___111_¶__¶¶¶_____¶¶¶¶¶¶
+_______¶¶¶¶_111111111111¶_____¶1111111111111_¶¶¶________¶¶¶¶¶¶¶
+___¶¶______¶_111111111111¶___¶_1111111111111¶______¶__¶¶¶¶¶¶¶¶
+_____________¶_1111111111_¶_¶_111111111111¶¶________¶¶¶¶¶¶¶¶
+_____________¶¶¶¶_11111111_¶__1111111__¶¶___________¶¶¶¶¶¶¶
+_____________¶¶__1_¶¶¶___11_11___¶¶¶¶_¶¶¶__________¶¶¶¶¶¶
+____________¶¶¶__11111111111111111111_¶¶¶¶________¶¶¶¶¶¶
+____________¶¶¶_1111111111111111111111¶¶¶¶_______¶¶¶¶¶¶¶
+____________¶¶¶1111111111111111111111__¶¶¶______¶¶¶¶¶¶¶
+___________¶¶__11111111111111111111111__¶¶_____¶¶¶¶¶¶¶
+__________¶¶¶¶_1111111111111111111111111_¶¶__¶¶¶¶¶¶¶¶
+__________¶¶¶¶_1111111111111111111111111_¶¶¶¶¶¶¶¶¶¶¶¶
+_________¶¶¶¶¶11111111111111111111111111_¶¶¶¶¶¶¶¶¶¶¶
+_________¶¶__¶1111111111111111111111111_¶¶¶¶¶¶¶¶¶¶¶
+_________¶¶¶___111111111¶1111¶1111111111¶_¶¶¶¶¶¶¶¶
+_________¶¶¶¶_¶_1111111_¶1111_1111111111¶_¶¶¶¶¶¶¶
+_________¶¶¶¶_¶111111111¶11111_111111111¶¶¶¶¶¶¶
+_________¶¶¶¶___11111111¶11111¶11111111__¶¶¶¶
+_________¶¶¶¶¶_¶11111111¶11111¶11111111__¶¶¶¶
+__________¶¶¶__¶_1111111¶11111¶11111111¶_¶¶¶
+___________¶¶¶¶¶_1111111¶11111¶11111111¶_¶¶¶
+___________¶_111¶1111111¶11111¶11111111¶___¶
+__________¶____1¶1111111__1111¶1111111__111_¶
+__________¶¶__¶_¶1111111_¶¶¶¶_¶1111111_1___¶¶
+________¶¶¶¶¶¶¶¶11_11111_¶¶¶¶¶¶_1111111¶¶¶¶¶¶¶
+_______________¶__1¶11_¶¶¶¶¶¶¶¶_111111___¶
+________________¶¶_¶__¶¶¶¶¶¶¶¶¶¶¶111¶__¶
+ -->
+<body>
+    <!----------------- HEADER END ---------------->
+    <div class="header">
+
+                <div class="header__top">
+                        <div class="header__top_liney">
+                                <a href="tel:833-INS-FLOOD">833-INS-FLOOD / 833-467-3566 </a>
+                                <span>
+                                    <a href="https://www.facebook.com/Insure-Flood-2050258468594597">
+                                        |
+                                    </a>
+                                </span>
+                            </div>
+                </div>
+
+                <div class="container">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <a class="navbar-brand" href="#"><img src="./img/logo.png" alt=""></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                  <a class="nav-linked" href="./index.html">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-linked" href="./about_us/">ABOUT US</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-linked" href="./program/">PROGRAMS</a>
+                                  </li>
+                                <li class="nav-item">
+                                    <a class="nav-linked" href="./flood/">FLOOD HELP</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-linked" href="./opportunities/">NEWS</a>
+                                </li>   
+                                <li class="nav-item header__get">
+                                    <a target="_blank" class="nav-linked" href="./get_a_quote/">GET A QUOTE</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </nav>
+                    </div>
+
+    </div>
+<!----------------- HEADER END ---------------->
+
+
+
+
+
+
+
+
+<!----------------- SLIDER ------------------->
+<section class="background-cover slicker">
+  <div class="slide slide--1">
+      <div data-aos="fade-left" data-aos-duration="3000" class="slide__block">
+        <h2>
+          WELCOME TO <br>
+          <span>INSURE FLOOD</span>
+        </h2>
+
+        <div class="slide__block_content">
+          <h4>Flood Insurance Made Easy</h4>
+          <div class="slide__block_content__table">
+              <p>Private Market Solutions</p>
+              <p>Residential Flood Insurance</p>
+              <p>NFIP Enhanced Solutions</p>
+              <p>Commercial Flood Insurance</p>
+              <p>Ability to write in critical flood zones</p>
+              <p>Excess Flood Programs</p>
+              <p>Business Income Coverage Available</p>
+              <p>Replacement Cost Coverage Available</p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="slide slide--2">
+      <div data-aos="fade-right" data-aos-duration="3000" class="slide__block">
+          <h2>
+            WELCOME TO <br>
+            <span>INSURE FLOOD</span>
+          </h2>
+  
+          <div class="slide__block_content">
+            <h4>INSURER COMPETITION</h4>
+            <h6>We work with over a dozen insurers to get you options. 
+                This means you get choices and can select the program that fits your needs best.</h6>
+          </div>
+        </div>
+  </div>
+
+  <div class="slide slide--3">
+      <div data-aos="fade-left" data-aos-duration="3000" class="slide__block">
+          <h2>
+            WELCOME TO <br>
+            <span>INSURE FLOOD</span>
+          </h2>
+  
+          <div class="slide__block_content">
+            <h4>COVERAGE MATTERS</h4>
+            <h6>
+                Our products provide coverages that are equal to or greater than the National Flood 
+                Insurance Program. Most of the products have options for replacement cost 
+                coverage, ordinance coverage, loss of income coverage and more
+            </h6>
+          </div>
+        </div>
+  </div>
+  <div class="slide slide--4">
+      <div data-aos="fade-left" data-aos-duration="3000" class="slide__block">
+          <h2>
+            WELCOME TO <br>
+            <span>INSURE FLOOD</span>
+          </h2>
+  
+          <div class="slide__block_content">
+            <h4>PRICE MATTERS</h4>
+            <h6>
+                We work hard to get you the best price, because price matters. When there’s carrier 
+                competition, you save.
+            </h6>
+          </div>
+        </div>
+  </div>
+  <div class="slide slide--5">
+      <div data-aos="fade-left" data-aos-duration="3000" class="slide__block">
+          <h2>
+            WELCOME TO <br>
+            <span>INSURE FLOOD</span>
+          </h2>
+  
+          <div class="slide__block_content">
+            <h4>EASY</h4>
+            <h6>
+                We make it simple. Easy underwriting. Straightforward process.
+            </h6>
+          </div>
+        </div>
+  </div>
+</section>
+<!----------------- SLIDER END ---------------->
+
+
+
+
+
+
+
+
+
+
+
+<!----------------- MAIN ---------------->
+<div class="main">
+  <div class="container">
+      <div class="main__content">
+          <p>Complete a quick online form and receive multiple quotes from 
+            private markets and enhanced NFIP program if available in your area.</p>
+
+            <div class="main__content_btn">
+              <a href="./get_a_quote/" class="btn">GET QUOTES NOW</a>
+            </div>
+
+            <div class="main__content_phone">
+              <strong>833-INS-FLOOD</strong>
+              <span>833-467-</span>
+              <p>3566</p>
+            </div>
+        </div>
+  </div>
+</div>
+<!----------------- MAIN END ---------------->
+
+
+
+
+
+
+
+<!----------------- FLOOD ---------------->
+<div class="flood">
+  <div class="container">
+
+    <div class="flood__text">
+      <h1>Flood Insurance Is NOT All The Same!</h1>
+      <p>Flood insurance is offered by both private insurers and through the government’s National Flood Insurance Program (NFIP). With
+         one application, this site will allow you to get flood insurance quotes from several different insurers and programs – Lloyds of 
+         London facilities, The Travelers, National Flood Insurance Program, Lexington Insurance Company, Philadelphia and many others.
+        </p>
+
+        <div class="flood__text_liney"></div>
+
+        <div class="flood__text_two">
+            <h1>See what the flood zones mean for you</h1>
+        </div>
+      <p>To find your flood map, click on the “Discover Your Risk” button below, then enter an address or a set of longitude/latitude 
+        coordinates. The map will zoom in and show the boundaries of the flood map for the chosen location. Click on the “View Web 
+        Map” button to view chosen flood insurance map data on the FEMA GeoPlatform.
+        </p>
+
+        <div class="flood__btn">
+          <button class="btn">DISCOVER YOUR RISK</button>
+        </div>
+      </div>
+  </div>
+</div>
+<!----------------- FLOOD END ---------------->
+
+
+
+
+
+
+
+<!----------------- INSURE ---------------->
+<div class="insure">
+  <div class="container">
+
+    <div class="insure__read">
+      <h1>
+        <span>KNOW MORE ABOUT</span> <br>
+        INSUREFLOOD
+      </h1>
+  
+      <p>
+        Insureflood.com was created to assist residential and commercial consumers with purchasing flood insurance from Private 
+        insurance companies and from FEMA’s National Flood Insurance Program (NFIP). In some situations the NFIP is the only choice 
+        available for coverage, however with dozens of private insurers entering the space, most properties now have numerous 
+        alternatives from private insurers that can provide broader coverage and lower premiums. Some private programs may also 
+        include business income coverage, replacement cost coverage, ordinance and law coverage and other enhancements
+      </p>
+  
+      <div class="insure__read_btn">
+        <a class="btn" href="./about_us/">READ MORE</a>
+      </div>
+    </div>
+
+
+    <div class="insure__img">
+      <img src="./img/flooder1.png" alt="">
+      <img src="./img/flooder2.png" alt="">
+      <img src="./img/flooder3.png" alt="">
+      <img src="./img/flooder4.png" alt="">
+    </div>
+
+
+
+    <div class="patient-quote flexslider">
+        <ul class="slides">
+          <li>
+            <div class="row">
+              <div class="col-md-12">
+                  <p>
+                      <span>Did you know?  There is a 1 in 4 chance that a home may be flooded in a 30 year period.</span>
+                    </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="col-md-12">
+                  <p>
+                      <span>Did you know? Federal legislation is raising flood insurance costs dramatically, particularly in denser cities.</span>
+                    </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="col-md-12">
+                  <p>
+                      <span>Did you know?  Just a few inches of flood water can cause tens of thousands of dollars in damage.</span>
+                    </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="col-md-12">
+                  <p>
+                      <span>Did you know?  Some insurance policies provide coverage for flood insurance, but only if you’re not in a flood zone.</span>
+                    </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+  
+    </div>
+
+  </div>
+<!----------------- INSURE END ---------------->
+
+
+
+
+
+
+
+
+<!----------------- GET ---------------->
+<div class="get">
+  <div class="container">
+      <div class="get__content">
+    
+          <div class="get__content_text">
+              <h1>GET A QUOTE</h1>
+              <p>
+                You may complete the application online by selecting “Submit Application Online”, otherwise you can also download the 
+                application and remit it via email.
+              </p>
+          </div>
+      
+          <div class="get__content_file">
+            <div class="get__content_file_download">
+                <img src="./img/quotePdf1.png" alt="">
+
+                <button class="btn">DOWNLOAD QUOTE APPLICATION</button>
+            </div>
+
+            <div class="get__content_file_download">
+                <img src="./img/quotePdf2.png" alt="">
+
+                <button class="btn">SUBMIT APPLICATION ONLINE</button>
+            </div>
+
+          </div>
+
+          
+      </div>
+  </div>
+</div>
+<!----------------- GET END ---------------->
+
+
+
+
+
+
+
+<!----------------- FORM ---------------->
+<div class="form">
+  <div class="container">
+      <div class="form__info">
+
+          <h1>CONTACT <span>US</span></h1>
+          
+          <div class="form__info_content">
+            <p>Customer Service: <a href="mailto:support@insureflood.com">support@insureflood.com</a></p> <span>|</span>
+            <p>Sales: <a href="mailto:sales@insureflood.com">sales@insureflood.com</a></p> <span>|</span>
+            <p>Claims: <a href="mailto:claims@insureflood.com">claims@insureflood.com</a></p>
+          </div>
+      
+          <div class="form__info_input">
+            <p>You can also reach out to us by completing the form below</p>
+      
+            <div class="row">
+              <div class="col-md-3 offset-md-3"><input type="text" placeholder="First Name"></div>
+              <div class="col-md-3"><input type="text" placeholder="Last Name"></div>
+      
+              <div class="col-md-3 offset-md-3"><input type="text" placeholder="Email"></div>
+              <div class="col-md-3"><input type="text" placeholder="Phone"></div>
+      
+              <div class="col-md-6 offset-md-3 form__info_input_height">
+                <textarea placeholder="Message" name="#" id="#" cols="30" rows="10"></textarea>
+              </div>
+            </div>
+      
+            <div class="flood__btn">
+                <button class="btn">SEND</button>
+              </div>
+          </div>
+      
+        </div>
+  </div>
+</div>
+<!----------------- FORM END ---------------->
+
+
+
+
+
+
+
+
+
+
+<!-------------- FOOTER --------------->
+<div class="footer">
+    <div class="footer__block">
+        <img src="./img/logo.png" alt="">
+        <div class="footer__block_nav">
+            <ul>
+                <li class="active"><a href="./index.html">HOME</a></li>
+                <li><a href="./about_us/">ABOUT US</a></li>
+                <li><a href="./program/">PROGRAMS</a></li>
+                <li><a href="./opportunities/">FLOOD HELP</a></li>
+                <li><a href="./contact_us/">NEWS</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__block_contact">
+            <div><p>Contact insure flood -</p> <a href="tel:833-INS-FLOOD">833-INS-FLOOD</a></div> <span> | </span> 
+            <a href="tel:833-467-3566">833-467-3566</a> <span> | </span>
+            <a href="mailto:info@insureflood.com">info@insureflood.com</a> <span> | </span>
+            <img src="./img/facebpok.png" alt="">
+        </div>
+
+        <div class="footer__block_info">
+          <p>© Copyright 2017 by <a href="#">First Fidelity Brokerage, Inc.</a> All rights reserved.
+
+            <a href="#">Terms of Use</a></p>
+        </div>
+    </div>
+
+</div>
+<!-------------- FOOTER END --------------->
+
+
+
+
+
+
+<!----------------- JQUERY ---------------->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider-min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
