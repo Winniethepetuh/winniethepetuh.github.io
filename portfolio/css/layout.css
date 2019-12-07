@@ -671,14 +671,14 @@ call-to-action .button {
    padding-top: 96px;
    padding-bottom: 66px;
 }
-#testimonials h1 {
+#testimonials h2 {
    font-family: 'Open Sans';
    font-size: 18px; 
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #fff;
 }
-#testimonials h1 span { display: none; }
+#testimonials h2 span { display: none; }
 #testimonials .header-col { padding-top: 9px; }
 #testimonials .header-col h2:before {
    font-family: 'FontAwesome';
