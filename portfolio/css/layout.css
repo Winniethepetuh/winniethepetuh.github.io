@@ -247,14 +247,14 @@ ul#nav li.current a { color: #F06000; }
 #resume a, #resume a:visited  { color: #11ABB0; }
 #resume a:hover, #resume a:focus { color: #313131; }
 
-#resume h1 {
+#resume h2 {
    font-family: 'Open Sans';
    font-weight: bold;
    font-size: 18px;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
-#resume h1 span {
+#resume h2 span {
    border-bottom: 3px solid #11ABB0;
    padding-bottom: 6px;
 }
@@ -419,7 +419,7 @@ ul#nav li.current a { color: #F06000; }
    padding-top: 90px;
    padding-bottom: 60px;
 }
-#portfolio h1 {
+#portfolio h2 {
    font-family: 'Open Sans';
    font-weight: normal;
    text-transform: uppercase;
@@ -680,7 +680,7 @@ call-to-action .button {
 }
 #testimonials h1 span { display: none; }
 #testimonials .header-col { padding-top: 9px; }
-#testimonials .header-col h1:before {
+#testimonials .header-col h2:before {
    font-family: 'FontAwesome';
    content: "\f10d";
 	padding-right: 10px;
@@ -818,24 +818,17 @@ call-to-action .button {
 #contact a, #contact a:visited  { color: #11ABB0; }
 #contact a:hover, #contact a:focus { color: #fff; }
 
-#contact h1 {
+#contact h2 {
    font: 18px/24px 'opensans-bold', sans-serif;
+   text-align: center;
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #EBEEEE;
    margin-bottom: 6px;
+   margin-bottom: 60px;
+   font-weight: bold;
 }
-#contact h1 span { display: none; }
-#contact h1:before {
-   font-family: 'FontAwesome';
-   content: "\f0e0";
-	padding-right: 10px;
-	font-size: 72px;
-   line-height: 72px;
-   text-align: left;
-   float: left;
-   color: #ebeeee;
-}
+#contact h2 span { display: none; }
 
 #contact h4 {
    font-family: 'Open Sans';
