@@ -1,0 +1,32 @@
+@import "fonts";
+
+/// main style start ///
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.start{
+    border: 1px solid #112255;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 90px;
+    transition: all 0.4s;
+    cursor: pointer;
+    &:hover{
+        background-color: #112255;
+        color: #fff;
+    }
+}
+.hide {
+    display: none;
+}
+
+.car {
+    width: 50px;
+    height: 100px;
+    background: transparent url(../img/player.png);
+}
+
+/// main-style end ///
+
+
+@import "media";
