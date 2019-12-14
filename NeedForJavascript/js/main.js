@@ -1,10 +1,11 @@
-const score     =   document.querySelector('.score'), // Достижения
-      start     =   document.querySelector('.start'), // Начало
-      gameArea  =   document.querySelector('.game-area'), // Игровое поле
-      car       =   document.createElement('div'); 
+const score       =   document.querySelector('.score'), // Достижения
+      start       =   document.querySelector('.start'), // Начало
+      gameArea    =   document.querySelector('.game-area'), // Игровое поле
+      car         =   document.createElement('div'), // создание машинки
+      carPosition =   document.querySelector('.car'); 
 
 
-car.classList.add('car')
+car.classList.add('car');
 
 
 
@@ -31,7 +32,7 @@ const getQuantityElements = heightElement => {
 }
 const startGame = () => {
     start.classList.add('hide');
-    gameArea.style.display = 'inline-block';
+    gameArea.style.display = 'block';
     document.querySelector('.keys').style.display = 'inline-block';
 
     for (let i = 0; i < getQuantityElements(100); i++) {
@@ -50,12 +51,11 @@ const startGame = () => {
         enemy.style.top = enemy.y + 'px';
         gameArea.appendChild(enemy);
     }
-
-    document.querySelector('.game-area').style.display = 'block';
-    settings.start = true;
+    
+    gameArea.appendChild(car);
     settings.x     = car.offsetLeft;
     settings.y     = car.offsetTop;
-    gameArea.appendChild(car);
+    settings.start = true;
     requestAnimationFrame(playGame);
 }
 const playGame = () => {

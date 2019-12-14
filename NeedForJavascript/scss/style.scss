@@ -391,7 +391,8 @@ body {
     height: 100px;
     background: transparent url(../img/player.png);
     position: absolute;
-    left: 125px;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 15px;
 }
 .enemy {
