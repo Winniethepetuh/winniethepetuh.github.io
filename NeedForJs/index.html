@@ -5,20 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NeedForJs</title>
-    <link rel="stylesheet" href="./css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
 
     <div class="score"></div>
+    <div class="best-score"></div>
 
-    <div class="game">
-        <div class="start">Начать игру!</div>
-        <div class="keys">
+    <div class="game"> <!--сама игра -->     
+                 <!-- снизу код onclick добавляет музыку после нажатия на кнопки -->
+        <div class="start start-easy">
+            Легкий 
+            <audio class="audio" src="./audio/sound.mp3"></audio>
+            <audio src="./audio/die.mp3" class="audio-die"></audio>
+        </div>
+        <div class="start start-normal">
+            Средний
+            <audio class="audio" src="./audio/sound.mp3"></audio>
+            <audio src="./audio/die.mp3" class="audio-die"></audio>
+        </div>
+        <div class="start start-hard">
+            Сложный
+            <audio class="audio" src="./audio/sound.mp3"></audio>
+            <audio src="./audio/die.mp3" class="audio-die"></audio>
+        </div>
+        
+        <div class="keys"> <!--инструкция для игрока-->
             <img src="./img/keys.jpg" alt="">
             <p>Используйте стрелки для управления автомобилем</p>
         </div>
-        <div class="game-area"></div>
+
+        <div class="game-area"></div> <!--игровое после-->
+
+        <div class="losing"> <!--экран проигрыша-->
+            <div class="losing__info">
+                <p class="animated pulse">YOU DIED</p>
+            </div>
+        </div>
     </div>
 
 
