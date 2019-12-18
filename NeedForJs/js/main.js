@@ -148,7 +148,7 @@ const playGame = () => {
             settings.y -= settings.speed
         }
 
-        if (keys.ArrowDown && settings.y < (gameArea.offsetHeight - 101)) {
+        if (keys.ArrowDown && settings.y < (gameArea.offsetHeight - 121)) {
             settings.y += settings.speed
         }
         car.style.left = settings.x + 'px'
